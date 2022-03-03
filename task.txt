@@ -1,0 +1,15 @@
+0. Načtěte a vytiskněte matici n × n. (náhodná čísla).
+1. Máme matici n × n   typu char. Uložte na diagonálu (vedlejší diagonálu, obvod) hvězdičky a všude jinde mezery.
+2. Totéž zadání, ale vytiskněte šachovnici, znak pro obdélníček: #219 = ’\333’
+3. Máme matici n × n   celých čísel . Napište funkci, která vrací součet čísel na obou diagonálách.
+4. Máme matici n × n. Napište funkci, která vezme matici a převrátí ji podle hlavní diagonály.
+5. Máme čtvercovou matici n × n. Zjistěte, zda tato matice je symetrická podle hlavní (vedlejší) diagonály.
+6. Máme dvourozměrné pole celých čísel. Na konec přidejte jeden sloupec a vložte do něj součet řádků. Pak přidejte řádek a vložte do něj zaokrouhlený průměr sloupců.
+7. Máme čtvercovou matici n × n  celých čísel. Nalezněte na každém řádku největší číslo a přehoďte jej s číslem na hlavní diagonále.
+8. Máme matici n × m. Do prvního řádku vložte samé jedničky, do druhého řádku dvojky atd. až do n-1. řádku vložte samá čísla n. Zkuste to také do sloupců.
+9. Máme obdélníkovou matici n × m reálných čísel. Napište funkci, která vrací součet (průměr) čísel v matici.
+10. Máme obdélníkovou matici n × m reálných čísel. Napište funkci, která vrátí největší (nejmenší) číslo v matici.
+11. Máme čtvercovou matici n × n . Nalezněte na každém řádku největší číslo a přehoďte jej s číslem na hlavní diagonále.
+12. Máme matici typu n × n . Napište funkci, která vyplní matici tak, že do prvního prvku ([0, 0]) uloží  číslo předané jako parametr a do každé další buňky uloží číslo o 1 větší.
+13. Máme dvě matice mat1 a mat2  typu n × m . Sečtěte tyto dvě matice do matice mat3. (po složkách)
+14. Máme matici mat1 typun × m . Napište funkci, která vezme tuto matici a jednorozměrné pole o vhodné délce a překopíruje z matice do pole všechny prvky.
