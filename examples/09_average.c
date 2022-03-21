@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -9,57 +8,57 @@
 */
 
 
-void list(int mat[] [100], int size_column, int size_row);
-int average(int mat[][100], int size_column, int size_row);
-void init_random(int mat[][100], int size_column, int size_row);
+int average(int rows, int cols, int mat[rows][cols]);
+void init_random(int rows, int cols, int mat[rows][cols]);
+void list(int rows, int cols, int mat[rows][cols]);
 
 int main()
 {
     srand( (unsigned) time(NULL));
     int mat[100][100];
-    int size_column, size_row;
-    printf("Enter size of matrix column: ");
-    scanf("%d", &size_column);
+    int rows, cols;
     printf("Enter size of matrix row: ");
-    scanf("%d", &size_row);
+    scanf("%d", &rows);
+    printf("Enter size of matrix column: ");
+    scanf("%d", &cols);
 
-    init_random(mat, size_column, size_row);
-    list(mat, size_column, size_row);
+    init_random(rows, cols, mat);
+    list(rows, cols, mat);
 
     printf("\n------------------------------\n\n");
 
-    printf("The average is %d\n", average(mat, size_column, size_row));
+    printf("The average is %d\n", average(rows, cols, mat));
 
     return 0;
 }
 
-int average(int mat[][100], int size_column, int size_row)
+int average(int rows, int cols, int mat[rows][cols])
 {
     int i, j, av=0;
-    for (i = 0; i < size_column; i++)
+    for (i = 0; i < rows; i++)
     {
-        for (j = 0; j < size_row; j++)
+        for (j = 0; j < cols; j++)
             av += mat[i][j];
     }
-    return av/(size_column*size_row);
+    return av/(rows*cols);
 }
 
-void init_random(int mat[][100], int size_column, int size_row)
+void init_random(int rows, int cols, int mat[rows][cols])
 {
-    for (int i = 0; i < size_column; i++)
+    for (int i = 0; i < rows; i++)
     {
-        for (int j = 0; j < size_row; j++)
+        for (int j = 0; j < cols; j++)
             mat[i][j] = rand() % 10;
     }
 }
 
-void list(int mat[][100], int size_column, int size_row)
+void list(int rows, int cols, int mat[rows][cols])
 {
-    int column, row;
-    for(column = 0; column < size_column ; column++)
+    int i, j;
+    for(i = 0; i < rows ;i++)
     {
-        for(row = 0; row < size_row ; row++)
-            printf("%d ", mat[column][row]);
+        for(j = 0; j < cols; j++)
+            printf("%d", mat[i][j]);
         printf("\n");
     }
 }
