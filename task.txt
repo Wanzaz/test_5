@@ -13,3 +13,9 @@
 12. Máme matici typu n × n . Napište funkci, která vyplní matici tak, že do prvního prvku ([0, 0]) uloží  číslo předané jako parametr a do každé další buňky uloží číslo o 1 větší.
 13. Máme dvě matice mat1 a mat2  typu n × m . Sečtěte tyto dvě matice do matice mat3. (po složkách)
 14. Máme matici mat1 typun × m . Napište funkci, která vezme tuto matici a jednorozměrné pole o vhodné délce a překopíruje z matice do pole všechny prvky.
+15. Máme matici typu n × m . Napište funkci, která vezme tuto matici a přehodí v ní první a poslední řádek (sloupec).
+16. Máme matici typu n × m . Napište funkci, která vrátí součet čísel v matici, která leží na obvodu matice (první a poslední řádky a sloupce).
+17. Máme matici znaků typu n × m . Napište funkci, která vezme tuto matici a znak a vrátí počet těchto znaků v matici.
+18. Máme dvourozměrné pole celých čísel. Na konec přidejte jeden sloupec a vložte do něj součet řádků. Pak přidejte řádek a vložte do něj zaokrouhlený průměr sloupců.
+19. Máme matici n × m reálných čísel a reálné číslo x. Napište funkci, která vezme matici a to číslo x a všechna čísla v matici vynásobí číslem x.
+20. Máme matici n × m reálných čísel a reálné číslo x. Napište funkci, která vezme matici a to číslo x a všechny čísla v matici, která se rovnají číslu x zdvojnásobí.
