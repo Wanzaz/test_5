@@ -7,8 +7,7 @@
    15. We have a matrix of type n × m. Write a function that takes this matrix and swaps the first and last rows (columns) in it.
  */
 
-void swap_first_column_with_last(int rows, int cols, int mat[rows][cols]);
-void swap_first_row_with_last(int rows, int cols, int mat[rows][cols]);
+
 void init_random(int rows, int cols, int mat[rows][cols]);
 void list(int rows, int cols, int mat[rows][cols]);
 
@@ -29,13 +28,8 @@ int main()
 
 	printf("---------------------------------------\n");
 
-	swap_first_row_with_last(rows, cols, mat);
-	list(rows, cols, mat);
-
-	printf("---------------------------------------\n");
-
-	swap_first_column_with_last(rows, cols, mat);
-	list(rows, cols, mat);
+	fills_array(rows, cols, mat, array);
+	list_array(array, rows*cols);
 
 	return 0;
 }
@@ -43,9 +37,35 @@ int main()
 
 void swap_first_row_with_last(int rows, int cols, int mat[rows][cols])
 {
-	int i, j, help;
+	int i, j;
 
-	for(i = 0; i < rows + 1; i++)
+	for(i = 0; i < rows; i++)
 	{
-		help = mat[0][i];
+		for(j = 0; j < cols; j++)
+		{
 
+		}
+	}
+}
+
+void init_random(int rows, int cols, int mat[rows][cols])
+{
+	int i, j;
+
+	for (i = 0; i < rows; i++)
+	{
+		for (j = 0; j < cols; j++)
+			mat[i][j] = rand() % 10;
+	}
+}
+
+void list(int rows, int cols, int mat[rows][cols])
+{
+	int i, j;
+	for(i = 0; i < rows ;i++)
+	{
+		for(j = 0; j < cols; j++)
+			printf("%d", mat[i][j]);
+		printf("\n");
+	}
+}
